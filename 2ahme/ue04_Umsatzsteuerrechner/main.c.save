@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    
+    char s[100];
+    double gezahlt;
+    
+    printf("UE04 Rechner fuer Umsatzsteuer\n");
+    printf("------------------------------\n\n");
+    
+    printf(" Gezahlt wurde: ");
+    fgets(s, 100, stdin);
+    sscanf(s, %lf, &gezahlt);
+    
+    if(gezahlt > 0) 
+    return 0;
+}
