@@ -50,3 +50,5 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+/2ahme/ue07_Spannungsteiler/dist/
+/2ahme/ue07_Spannungsteiler/build/

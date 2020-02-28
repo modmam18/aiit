@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;UE05 main()&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;A: &#34;&#34;UE05 Einkommenssteuer&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;E: einkommen&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<alternative text="&#34;einkommen &#60; 0&#34;" comment="&#34;&#34;" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;A: &#34;&#34;Eingabefehler&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<jump text="&#34;return 1&#34;" comment="&#34;&#34;" color="ffffff"></jump>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qFalse>
+		</alternative>
+		<alternative text="&#34;einkommen &#62;= 1E6&#34;" comment="&#34;&#34;" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;steuer = (einkommen - 1E6) * 0.55&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;steuer = steuer + 10000 * 0.5&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;steuer = steuer + 30000 * 0.48&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;steuer = steuer + 29000 * 0.42&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<alternative text="&#34;einkommen&#62;=90000&#34;" comment="&#34;&#34;" color="ffffff">
+					<qTrue>
+						<instruction text="&#34;steuer = (einkommen - 90000) * 0.5&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;steuer = steuer + 30000 * 0.48&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;steuer = steuer + 29000 * 0.42&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+					</qTrue>
+					<qFalse>
+						<alternative text="&#34;einkommen &#62;= 60000&#34;" comment="&#34;&#34;" color="ffffff">
+							<qTrue>
+								<instruction text="&#34;steuer = (einkommen - 60000) * 0.48&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+								<instruction text="&#34;steuer = steuer + 29000 * 0.42&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<alternative text="&#34;einkommen &#62;= 31000 &#34;" comment="&#34;&#34;" color="ffffff">
+									<qTrue>
+										<instruction text="&#34;steuer = (einkommen - 31000 * 0.42&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+									</qTrue>
+									<qFalse>
+										<instruction text="&#34;steuer = 0&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+									</qFalse>
+								</alternative>
+							</qFalse>
+						</alternative>
+					</qFalse>
+				</alternative>
+			</qFalse>
+		</alternative>
+		<instruction text="&#34;A: steuer&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<jump text="&#34;return 0&#34;" comment="&#34;&#34;" color="ffffff"></jump>
+	</children>
+</root>

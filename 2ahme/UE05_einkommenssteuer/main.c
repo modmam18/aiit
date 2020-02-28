@@ -42,7 +42,7 @@ int main()
        steuer = 0;
        }
 
-
+     printf(" Steuer: %2f Euro \n\n", steuer);
 
      return 0;
 }
