@@ -52,3 +52,7 @@ Mkfile.old
 dkms.conf
 /2ahme/ue07_Spannungsteiler/dist/
 /2ahme/ue07_Spannungsteiler/build/
+/2ahme/ue08_funktionen/build/
+/2ahme/ue08_funktionen/dist/
+/2ahme/ue09_spannungsteiler/build/
+/2ahme/ue09_spannungsteiler/dist/
