@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;calcCuboid&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;A: Quader&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<repeat text="&#34;Solange l &#60; 0&#34;" comment="&#34;&#34;" color="ffffff">
+			<qRepeat>
+				<instruction text="&#34;l = getInputDoubleValue(&#34;&#34;Laenge&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qRepeat>
+		</repeat>
+		<repeat text="&#34;Solange b &#60; 0&#34;" comment="&#34;&#34;" color="ffffff">
+			<qRepeat>
+				<instruction text="&#34;b = getInputDoubleValue(&#34;&#34;Breite&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qRepeat>
+		</repeat>
+		<repeat text="&#34;Solange h &#60; 0&#34;" comment="&#34;&#34;" color="ffffff">
+			<qRepeat>
+				<instruction text="&#34;h = getInputDoubleValue(&#34;&#34;Hoehe&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qRepeat>
+		</repeat>
+		<instruction text="&#34;volumen = l * b * h&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;flaeche = 2 * l * b + 2 * l * h + 2 * b * h&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;A:&#34;&#34;Oberflaeche&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;A: &#34;&#34;Volumen&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+	</children>
+</root>

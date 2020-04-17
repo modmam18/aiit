@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;main&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<call text="&#34;auswahl = getSelectedMenu&#34;" comment="&#34;&#34;" color="ffffff"></call>
+		<case text="&#34;auswahl =&#34;,&#34;1&#34;,&#34;2&#34;,&#34;3&#34;,&#34;4&#34;" comment="&#34;&#34;" color="ffffff">
+			<qCase>
+				<instruction text="&#34;calcCube&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;break&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;calcCuboid&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;break&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;calcsphere&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;break&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qCase>
+			<qCase>
+				<jump text="&#34;return 0&#34;" comment="&#34;&#34;" color="ffffff"></jump>
+			</qCase>
+		</case>
+	</children>
+</root>
