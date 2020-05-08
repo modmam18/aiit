@@ -30,14 +30,25 @@ int wandleSternInDreieck (double *pRab, double *pRac, double *pRbc, double ra, d
 }
 
 int main () {
-  int f1;
-  int f2;
+  const double eps = 1E-10;
+  int rv;
   double ra, rb, rc;
   double rab, rac, rbc;
   
-  f1 = wandleDreieckInStern(10, 15, 20, &ra, &rb, &rc);
-  f2 = wandleSternInDreieck(25, 30, 35, &rab, &rac, &rbc);
+  // Test 1 wandleDreieckInStern
+  rab = 1; rac = 2; rbc = 3;
+  rv = wandleDreieckInStern(rab, rac, rbc, &ra, &rb, &rc);
+  if (rv != 0) {
+    printf("Test 1: Fehler rv = %d\n", rv);
+  } else {
+    if ((abs(ra - 0.3333333) <= eps) && (abs(rb - 0.5) <= eps) && (abs(rc - 1.0 <= eps))) {
+      printf("OK   ");
+    } else {
+      printf("ERROR   ");
+    }
+    printf("Test 1: rab=%lf, rac=%lf, rbc%lf -> ra=%lf, rb=%lf, rc=%lf\n", rab, rac, rbc, ra, rb, rc);
+  }
   
-  return 0;
+ 
 }
 
