@@ -100,7 +100,7 @@ void zweidimensionaleFelder() {
     f[2][1] = 8;
     f[2][2] = 9;
     f[2][3] = 10;
-    printf2DimFeld(f, 4);
+    print2DimFeld(f, 4);
 }
 void print3DimFeld(double x[][3][4], int anzahl) {
     printf("print3DimFeld:\n");
@@ -132,7 +132,7 @@ void dreidimensionalesFeld() {
     for (int i = 0; i < 2; i++) {
         for (int j = 0; j < 3; j++) {
             for (int k = 0; k < 4; k++) {
-                printf("feld[%d][%d] %d => %f\n",
+                printf("feld[%d][%d] %p => %f\n",
                    i, j, k, &f[i][j][k], f[i][j][k]);
             }
         }
