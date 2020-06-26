@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1593165394 source:/home/matteo/aiit/2ahme/ue14_kleines-1x1/main.c
+	<stdio.h>
+	<stdlib.h>
+
