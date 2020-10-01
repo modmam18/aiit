@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=ue16_rechnenMitBruechen
+PROJECTNAME=ue16_RechnenMitBruechen
 
 # Active Configuration
 DEFAULTCONF=Debug
