@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1607537242 source:c:\users\matteo\schule\informatik\ue19_feldersortieren\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
