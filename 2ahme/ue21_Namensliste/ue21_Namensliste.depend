@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1613060737 source:c:\users\matteo\schule\informatik\ue21_namensliste\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
