@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1615400519 source:/home/matteo/aiit/3AHME/ue22_argcargv/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
