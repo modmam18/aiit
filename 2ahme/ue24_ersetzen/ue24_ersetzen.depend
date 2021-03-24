@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1616407719 source:/home/matteo/aiit/3AHME/ue24_ersetzen/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
