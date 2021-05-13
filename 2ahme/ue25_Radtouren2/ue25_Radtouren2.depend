@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1620905122 source:c:\users\matteo\schule\informatik\ue25_radtouren2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
